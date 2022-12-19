@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Jianrong Zhang"
-  avatar           : # "zhiningliu.jpg"
+  avatar           : "head.jpg"
   bio              : "All those moments will be lost in time, like tears in rain."
   location         : "Changchun, China"
   employer         : "Jilin Unversity (JLU)"
@@ -91,7 +91,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN"
   email            : zhangjrjlu@163.com
   researchgate     : #"https://www.researchgate.net/profile/Zhi_Ning_Liu"
-  uri              : #"https://zhiningliu.com/"
+  uri              : #"https://jiro-zhang.github.io/Jianrong_Zhang/"
   bitbucket        :
   codepen          :
   dribbble         :
