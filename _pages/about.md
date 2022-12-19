@@ -19,15 +19,16 @@ redirect_from:
 <!-------------------->
 **你好! / Hello! / 안녕하세요! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
-<!-- I'm a first-year Ph.D. student in [Department of Computer Science](https://cs.illinois.edu/), [University of Illinois at Urbana-Champaign](https://illinois.edu/), working with the very nice [Prof. Hanghang Tong](http://tonghanghang.org/). 
+I'm a third-year M.Eng. student in [College of Computer Science and technology](http://ccst.jlu.edu.cn/), [Jilin University](http://global.jlu.edu.cn/). 
 
-Before joining UIUC, I received my M.Eng. and B.S. in Computer Science from [Jilin University](http://global.jlu.edu.cn/) in 2019 and 2022, respectively. 
-During my time at Jilin University, I was fortunate to have [Prof. Yi Chang](http://yichang-cs.com/) as my mentor, and had the pleasure of working with [Dr. Jiang Bian](https://sites.google.com/view/jiangbian) & [Dr. Wei Cao](https://weicao1990.github.io/) (Microsoft Research), [Dr. Pengfei Wei](http://pengfei-wei.com/) (ByteDance), and [Prof. Jing Jiang](https://profiles.uts.edu.au/jing.jiang) (UTS).
+Prior to that, I received my B.S. in College of Software, [Jilin University](http://global.jlu.edu.cn/) in 2020. 
+During my time at Jilin University, I was fortunate to have internships at Baidu Research (working with [Prof. Guodong Guo](https://scholar.google.com/citations?user=f2Y5nygAAAAJ&hl=zh-CN) and Tianyi Wu, SenseTime, and Tencent AILab(working with [Dr. Xi Shen](https://xishen0220.github.io/).
+
 
 <!-- I am a M.S. student at [School of Artificial Intelligence](http://sai.jlu.edu.cn/) at [Jilin University](http://global.jlu.edu.cn/), supervised by Prof. [Yi Chang](http://yichang-cs.com/).
 Prior to that, I received my B.S. in Computer Science (Tang Ao-qing Honors Program) from Jilin University in 2019. -->
 
-<!-- My goal is to build *fair machine learning systems* that benefit *minority* and *under-represented* groups. I am particularly interested in developing algorithms and systems for **<u>unbiased</u>**, **<u>efficient</u>** and **<u>robust</u>** learning in real-world applications. My recent interests include imbalanced learning, meta learning, and fair learning from graph/stream data. --> 
+<!-- My goal is to build *fair machine learning systems* that benefit *minority* and *under-represented* groups. I am particularly interested in developing algorithms and systems for **<u>unbiased</u>**, **<u>efficient</u>** and **<u>robust</u>** learning in real-world applications. My recent interests include imbalanced learning, meta learning, and fair learning from graph/stream data. -->
 
 
 <!--
