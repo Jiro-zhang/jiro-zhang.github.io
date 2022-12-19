@@ -24,6 +24,7 @@ author_profile: true
       [<a href="https://arxiv.org/abs/2204.13314">arXiv</a>]
     </td>
     <td style="padding:10px;width:30%;vertical-align:middle;border-right:none;border-bottom:none;">
+      <a href="/images/region_arch.png">
       <img src='/images/region_arch.png' width="300">
       </a>
     </td>
