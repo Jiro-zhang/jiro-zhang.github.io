@@ -17,12 +17,9 @@ redirect_from:
 
 ## Education
 
-* Ph.D. in Computer Science, [University of Illinois at Urbana-Champaign](https://illinois.edu/), 2022 - present
-  * @Department of Computer Science
-  * Supervisor: Prof. [Hanghang Tong](http://tonghanghang.org/)
-* M.Eng. in Computer Science, [Jilin University](http://global.jlu.edu.cn/), 2019 - 2022
-  * @School of Artificial Intelligence
-  * Supervisor: Prof. [Yi Chang](http://yichang-cs.com/)
+* M.Eng. in Computer Science, [Jilin University](http://global.jlu.edu.cn/), 2020 - Present
+  * @College of Computer Science and Technology
+  * Supervisor: Prof. Hongwei Zhao
 * B.E. in Software Engineering, [Jilin University](http://global.jlu.edu.cn/), 2016 - 2020
   * @College of Software
   <!-- * Ave. Score: 88.96/100 -->

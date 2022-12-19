@@ -12,11 +12,11 @@ author_profile: true
       <b>Region-level Contrastive and Consistency Learning for Semi-Supervised Semantic Segmentation</b>, 
       <br>
       <u>Jianrong Zhang*</u>, 
-      <u>Tianyi Wu*</u>, 
-      <u>Chuanghao Ding*</u>,
-      <u>Hongwei Zhao</u>, 
+      Tianyi Wu*, 
+      Chuanghao Ding*,
+      Hongwei Zhao, 
       and
-      <u>Guodong Guo</u>, 
+      Guodong Guo
       <br>
       <i>In Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (<b>IJCAI 2022</b>)</i>. 
       <br>
@@ -25,7 +25,7 @@ author_profile: true
     </td>
     <td style="padding:10px;width:30%;vertical-align:middle;border-right:none;border-bottom:none;">
       <a href="/images/region_arch.png">
-      <img src='/images/mesa.png' width="300">
+      <img src='/images/region_arch.png' width="300">
       </a>
     </td>
   </tr>
