@@ -86,12 +86,12 @@ author:
   location         : "Changchun, China"
   employer         : "Jilin Unversity (JLU)"
   employer_site    : "http://global.jlu.edu.cn/"
-  zhihu            : #"liu-zhi-zhu-14"
+  zhihu            : 
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN"
   email            : zhangjrjlu@163.com
-  researchgate     : #"https://www.researchgate.net/profile/Zhi_Ning_Liu"
-  uri              : #"https://jiro-zhang.github.io/Jianrong_Zhang/"
+  researchgate     :
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
@@ -102,14 +102,14 @@ author:
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      :
   lastfm           :
-  linkedin         : # "zhiningliu/"
-  orcid            : # "https://orcid.org/0000-0003-1828-2109"
+  linkedin         :
+  orcid            : 
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            : # "zhiningliu1998"
+  stackoverflow    :
+  steam            : 
   tumblr           :
   twitter          : 
   vine             :
