@@ -80,18 +80,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "Zhining Liu"
+  name             : "Jianrong Zhang"
   avatar           : # "zhiningliu.jpg"
   bio              : "All those moments will be lost in time, like tears in rain."
-  location         : "Champaign, USA"
-  employer         : "University of Illinois (UIUC)"
-  employer_site    : "https://illinois.edu/"
-  zhihu            : "liu-zhi-zhu-14"
+  location         : "Changchun, China"
+  employer         : "Jilin Unversity (JLU)"
+  employer_site    : #"https://illinois.edu/"
+  zhihu            : #"liu-zhi-zhu-14"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=5WORAUQAAAAJ&hl=zh-CN"
-  email            : zhining.liu@outlook.com
-  researchgate     : "https://www.researchgate.net/profile/Zhi_Ning_Liu"
-  uri              : "https://zhiningliu.com/"
+  email            : zhangjrjlu@163.com
+  researchgate     : #"https://www.researchgate.net/profile/Zhi_Ning_Liu"
+  uri              : #"https://zhiningliu.com/"
   bitbucket        :
   codepen          :
   dribbble         :
