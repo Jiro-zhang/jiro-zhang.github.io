@@ -19,10 +19,10 @@ redirect_from:
 <!-------------------->
 **你好! / Hello! / 안녕하세요! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
-I'm a third-year M.Eng. student in [College of Computer Science and technology](http://ccst.jlu.edu.cn/), [Jilin University](http://global.jlu.edu.cn/). 
+I'm a third-year M.S. student in [College of Computer Science and technology](http://ccst.jlu.edu.cn/), [Jilin University](http://global.jlu.edu.cn/). 
 
-Prior to that, I received my B.S. in College of Software, [Jilin University](http://global.jlu.edu.cn/) in 2020. 
-During my time at Jilin University, I was fortunate to have internships at Baidu Research (working with [Prof. Guodong Guo](https://scholar.google.com/citations?user=f2Y5nygAAAAJ&hl=zh-CN) and Tianyi Wu, SenseTime, and Tencent AILab(working with [Dr. Xi Shen](https://xishen0220.github.io/).
+Prior to that, I received my B.E. in College of Software, [Jilin University](http://global.jlu.edu.cn/) in 2020. 
+During my time at Jilin University, I was fortunate to have internships at Baidu Research (working with [Prof. Guodong Guo](https://scholar.google.com/citations?user=f2Y5nygAAAAJ&hl=zh-CN)), SenseTime, and Tencent AILab (working with [Dr. Xi Shen](https://xishen0220.github.io/)).
 
 
 <!-- I am a M.S. student at [School of Artificial Intelligence](http://sai.jlu.edu.cn/) at [Jilin University](http://global.jlu.edu.cn/), supervised by Prof. [Yi Chang](http://yichang-cs.com/).
