@@ -15,11 +15,11 @@ main:
   - title: "CV / Résumé"
     url: /cv/
         
-  - title: "Blog Posts"
-    url: /blogs/
+  # - title: "Blog Posts"
+  #   url: /blogs/
 
-  - title: "Gallery"
-    url: /gallery/
+  # - title: "Gallery"
+  #   url: /gallery/
     
   # - title: "Guide"
   #   url: /markdown/

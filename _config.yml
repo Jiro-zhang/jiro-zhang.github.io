@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jian-rong ZHANG (刘芷宁)"
+title                    : "Jian-rong ZHANG (张健荣)"
 title_separator          : "-"
 name                     : &name "Jianrong Zhang"
 description              : &description "Welcome to my homepage!"
@@ -98,18 +98,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "ZhiningLiu1998"
+  github           : "Jiro-Zhang"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "zhiningliu/"
-  orcid            : "https://orcid.org/0000-0003-1828-2109"
+  linkedin         : # "zhiningliu/"
+  orcid            : # "https://orcid.org/0000-0003-1828-2109"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            : "zhiningliu1998"
+  steam            : # "zhiningliu1998"
   tumblr           :
   twitter          : 
   vine             :
