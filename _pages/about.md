@@ -168,4 +168,4 @@ Prior to that, I received my B.S. in Computer Science (Tang Ao-qing Honors Progr
 -->
 
 <center><b>Site Analytics</b></center>
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=OWC9HmV7BQ7xrRukuPu-mZSRQFpa4-jNftdDB_Tjugc"></script>
+<script type="text/javascript" id="clstr_globe" src="//cdn.clustrmaps.com/globe.js?d=OWC9HmV7BQ7xrRukuPu-mZSRQFpa4-jNftdDB_Tjugc"></script>
