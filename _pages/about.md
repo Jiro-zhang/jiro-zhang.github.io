@@ -31,31 +31,23 @@ Prior to that, I received my B.S. in Computer Science (Tang Ao-qing Honors Progr
 <!-- My goal is to build *fair machine learning systems* that benefit *minority* and *under-represented* groups. I am particularly interested in developing algorithms and systems for **<u>unbiased</u>**, **<u>efficient</u>** and **<u>robust</u>** learning in real-world applications. My recent interests include imbalanced learning, meta learning, and fair learning from graph/stream data. -->
 
 
-<!--
+
 **Contact me via**:  
 <i class="fa fa-fw fa-envelope"></i> <font style="font-size: 0.9em;">Mail: <a href="mailto:zhangjrjlu@163.com">zhangjrjlu[AT]163.com</a> or <a href="mailto:zhangjrjlu@gmail.com">zhangjrjlu[AT]gmail.com</a></font>
 <br>
-<!-- <i class="fa fa-fw fa-phone"></i> <font style="font-size: 0.9em;">Mobile: +86 176-1010-6607</font> -->
-<!--
+<!-- <i class="fa fa-fw fa-phone"></i> <font style="font-size: 0.9em;">Mobile: +86 176-1010-6607</font>
+
 <h1 style="color: rgb(231, 65, 65);"><b>What's new:</b></h1>
 <div style="line-height: 1.5em; font-size: 0.95em">
   <p>
-  <!-- [09/2019] My colleague Boyang Yu will was elected as the class monitor of JLUSAI!!!<br> -->
-  <!-- [09/2019] My colleague Zhepei Wei will serve as on of the general chairs of AAAI 2021!!!<br> -->
-  <!--<b>[03/2022]</b> I will join Prof. <a href="http://tonghanghang.org/">Hanghang Tong</a>'s group at UIUC this fall as a Ph.D. student!<br>
-  <b>[01/2022]</b> A curated list across all Machine Learning topics: <a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">Awesome2ML</a> <b>[<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning">ENG</a>/<a href="https://github.com/ZhiningLiu1998/awesome-awesome-machine-learning/blob/main/README_CN.md">中文</a>]</b><br>
-  <b>[11/2021]</b> What are inter-&intra-class imbalance and how do they affect learning? <b>[<a href="https://arxiv.org/abs/2111.12791">PDF</a>]</b><br>
-  <b>[11/2021]</b> Check out our <a href="https://arxiv.org/abs/2111.12776">paper</a> describing the <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">IMBENS</a> package. <b>[<a href="https://arxiv.org/abs/2111.12776">PDF</a>]</b><br>
-  <b>[06/2021]</b> The <a href="https://github.com/ZhiningLiu1998/imbalanced-ensemble">imbalanced-ensemble</a> Python package is released, try it out! <b>[<a href="https://imbalanced-ensemble.readthedocs.io">Docs</a>/<a href="https://pypi.org/project/imbalanced-ensemble/">PyPI</a>]</b><br>
-  <b>[10/2020]</b> Our work on meta imbalanced learning was accepted by NeurIPS 2020. <b>[<a href="{{ site.baseurl }}files/NeurIPS_2020_MESA.pdf">PDF</a>]</b><br>
-  <b>[06/2020]</b> I am helping to organize <a href="https://sigir.org/sigir2020/">ACM SIGIR 2020</a>. Welcome!<br>
-  <b>[04/2020]</b> We started the <a href="https://github.com/ZhiningLiu1998/awesome-imbalanced-learning">Awesome-Imbalanced-Learning</a> project. Contributions are welcomed!<br>
-  <b>[10/2019]</b> Our work on imbalanced classification was accepted by IEEE ICDE 2020. <b>[<a href="{{ site.baseurl }}files/ICDE_2020_SPE.pdf">PDF</a>]</b><br>
-  <b>[07/2019]</b> I received my B.Sc. degree from the Tang Aoqing Honors Program in Science.<br>
-  <b>[09/2018]</b> I will intern at MSRA in the following year, supervised by Dr. <a href="https://sites.google.com/view/jiangbian">Jiang BIAN</a> and Dr. <a href="https://weicao1990.github.io/">Wei CAO</a>.<br>
+  <b>[06/2022]</b> I join [Tencent AI Lab](https://ai.tencent.com/ailab/en/index) as a research intern, I will work with [Dr. Xi Shen](https://xishen0220.github.io/) in computer vision! <br>
+  <b>[04/2022]</b> Our work on semi-supervised semantic segmentation was accepted by IJCAI 2022 (Long oral). <b>[<a href="https://arxiv.org/abs/2204.13314">PDF</a>]</b><br>
+  <b>[07/2021]</b> I join [SenseTime MIG](https://www.sensetime.com/en) as a research intern.
+  <b>[07/2021]</b> I am a research intern at [Baidu Research](http://research.baidu.com/), supervised by [Prof. Guodong Guo](https://scholar.google.com/citations?user=f2Y5nygAAAAJ&hl=zh-CN)
+  <b>[07/2020]</b> I received my B.E. degree from the College of Software, Jilin University.<br>
+  <b>[01/2020]</b> I will intern at Didi Chuxing as an Algorithm Engineer.<br>
   </p>
-</div>   
--->
+</div>  
 
 
 <!-- # Experience
