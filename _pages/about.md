@@ -40,10 +40,10 @@ Prior to that, I received my B.S. in Computer Science (Tang Ao-qing Honors Progr
 <h1 style="color: rgb(231, 65, 65);"><b>What's new:</b></h1>
 <div style="line-height: 1.5em; font-size: 0.95em">
   <p>
-  <b>[06/2022]</b> I join [Tencent AI Lab](https://ai.tencent.com/ailab/en/index) as a research intern, I will work with [Dr. Xi Shen](https://xishen0220.github.io/) in computer vision! <br>
+  <b>[06/2022]</b> I join <a href="https://ai.tencent.com/ailab/en/index">Tencent AI Lab</a> as a research intern, I will work with <a href="https://xishen0220.github.io/">Dr. Xi Shen</a> in computer vision! <br>
   <b>[04/2022]</b> Our work on semi-supervised semantic segmentation was accepted by IJCAI 2022 (Long oral). <b>[<a href="https://arxiv.org/abs/2204.13314">PDF</a>]</b><br>
-  <b>[07/2021]</b> I join [SenseTime MIG](https://www.sensetime.com/en) as a research intern.
-  <b>[07/2021]</b> I am a research intern at [Baidu Research](http://research.baidu.com/), supervised by [Prof. Guodong Guo](https://scholar.google.com/citations?user=f2Y5nygAAAAJ&hl=zh-CN)
+  <b>[07/2021]</b> I join <a href="https://www.sensetime.com/en">SenseTime MIG</a> as a research intern.
+  <b>[07/2021]</b> I am a research intern at <a herf="http://research.baidu.com/">Baidu Research</a>, supervised by <a href="https://scholar.google.com/citations?user=f2Y5nygAAAAJ&hl=zh-CN">Prof. Guodong Guo</a>.
   <b>[07/2020]</b> I received my B.E. degree from the College of Software, Jilin University.<br>
   <b>[01/2020]</b> I will intern at Didi Chuxing as an Algorithm Engineer.<br>
   </p>
