@@ -17,7 +17,7 @@ redirect_from:
 ![MSc](https://img.shields.io/badge/M.Sc.-Jilin%20Univ.%20(2019--2022)-brightgreen?style=flat-square&color=181717&labelColor=blueviolet) -->
 
 <!-------------------->
-**你好! / Hello! / 안녕하세요! / こんにちは! / Здравствуй! / Bonjour! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
+**你好! / Hello! / Bonjour! / 안녕하세요! / こんにちは! / Здравствуй! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
 I'm a third-year M.S. student in [College of Computer Science and technology](http://ccst.jlu.edu.cn/), [Jilin University](http://global.jlu.edu.cn/). 
 
