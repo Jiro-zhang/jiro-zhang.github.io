@@ -25,7 +25,7 @@ author_profile: true
     </td>
     <td style="padding:10px;width:30%;vertical-align:middle;border-right:none;border-bottom:none;">
       <a href="https://github.com/Jiro-zhang/Jianrong_Zhang/blob/main/images/region_arch.png">
-      <img src='images/region_arch.png' width="300">
+      <img src='../images/region_arch.png' width="300">
       </a>
     </td>
   </tr>
