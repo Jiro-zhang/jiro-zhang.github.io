@@ -17,7 +17,7 @@ redirect_from:
 
 ## Education
 
-* M.Eng. in Computer Science, [Jilin University](http://global.jlu.edu.cn/), 2020 - Present
+* M.S. in Computer Science, [Jilin University](http://global.jlu.edu.cn/), 2020 - Present
   * @College of Computer Science and Technology
   * Supervisor: Prof. Hongwei Zhao
 * B.E. in Software Engineering, [Jilin University](http://global.jlu.edu.cn/), 2016 - 2020
