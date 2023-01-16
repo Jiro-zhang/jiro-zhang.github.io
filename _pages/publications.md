@@ -19,7 +19,7 @@ author_profile: true
       Hongwei Zhao, 
       Hongtao Lu, 
       and
-      Xi Shen+.
+      Xi Shen<sup>+</sup>.
       <br>
       <!-- <i>In Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (<b>IJCAI 2022</b>)</i>.  -->
       <br>
@@ -57,7 +57,7 @@ author_profile: true
       Chuanghao Ding*,
       Hongwei Zhao, 
       and
-      Guodong Guo+.
+      Guodong Guo<sup>+</sup>.
       <br>
       <i>In Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (<b>IJCAI 2022</b>)</i>. 
       <br>
