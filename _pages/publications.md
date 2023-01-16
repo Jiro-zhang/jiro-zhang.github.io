@@ -31,7 +31,7 @@ author_profile: true
     </td>
     <td style="padding:10px;width:30%;vertical-align:middle;border-right:none;border-bottom:none;">
       <a href="https://github.com/Jiro-zhang/Jianrong_Zhang/blob/main/images/T2M-GPT.gif">
-      <img src='../images/T2M-GPT.gif' width="300">
+      <img src='../images/T2M-GPT.gif' width="200">
       </a>
     </td>
   </tr>
@@ -39,7 +39,7 @@ author_profile: true
 
 ```bib
 @article{zhang2023generating,
-  title={{T2M-GPT: Generating Human Motion from Textual Descriptions with Discrete Representations}},
+  title={T2M-GPT: Generating Human Motion from Textual Descriptions with Discrete Representations},
   author={Zhang, Jianrong and Zhang, Yangsong and Cun, Xiaodong and Huang, Shaoli and Zhang, Yong and Zhao, Hongwei and Lu, Hongtao and Shen, Xi},
   booktitle={arXiv},
   year={2023},
