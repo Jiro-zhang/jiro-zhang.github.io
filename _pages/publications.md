@@ -18,13 +18,13 @@ author_profile: true
       <br>
       <u>Jianrong Zhang*</u>, 
       Yangsong Zhang*, 
-      Xiaodong Cun,
-      Shaoli Huang,
-      Yong Zhang,
+      <a href="https://vinthony.github.io/academic/">Xiaodong Cun</a>,
+      <a href="https://scholar.google.com/citations?user=o31BPFsAAAAJ&hl=en">Shaoli Huang</a>,
+      <a href="https://yzhang2016.github.io/">Yong Zhang</a>,
       Hongwei Zhao, 
       Hongtao Lu, 
       and
-      Xi Shen<sup>+</sup>.
+      <a href="https://xishen0220.github.io/">Xi Shen<sup>+</sup></a>.
       <br>
       <!-- <i>In Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (<b>IJCAI 2022</b>)</i>.  -->
       <br>
