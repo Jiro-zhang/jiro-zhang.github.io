@@ -16,7 +16,7 @@ author_profile: true
     <td style="padding:5px;width:80%;vertical-align:middle;border-right:none;border-bottom:none;">
       <b>T2M-GPT: Generating Human Motion from Textual Descriptions with Discrete Representations</b>, 
       <br>
-      <u>Jianrong Zhang*</u>, 
+      <a href="https://jiro-zhang.github.io/Jianrong_Zhang/">Jianrong Zhang*</a>, 
       Yangsong Zhang*, 
       <a href="https://vinthony.github.io/academic/">Xiaodong Cun</a>,
       <a href="https://scholar.google.com/citations?user=o31BPFsAAAAJ&hl=en">Shaoli Huang</a>,
@@ -57,12 +57,12 @@ author_profile: true
     <td style="padding:5px;width:80%;vertical-align:middle;border-right:none;border-bottom:none;">
       <b>Region-level Contrastive and Consistency Learning for Semi-Supervised Semantic Segmentation</b>, 
       <br>
-      <u>Jianrong Zhang*</u>, 
-      Tianyi Wu*, 
+      <a href="https://jiro-zhang.github.io/Jianrong_Zhang/">Jianrong Zhang*</a>,
+      <a href="https://scholar.google.com/citations?user=FHdkcWsAAAAJ&hl=en">Tianyi Wu*</a>, 
       Chuanghao Ding*,
       Hongwei Zhao, 
       and
-      Guodong Guo<sup>+</sup>.
+      <a href="https://scholar.google.com/citations?user=f2Y5nygAAAAJ&hl=zh-CN">Guodong Guo<sup>+</sup></a>.
       <br>
       <i>In Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (<b>IJCAI 2022</b>)</i>. 
       <br>
