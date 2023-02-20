@@ -32,7 +32,8 @@ author_profile: true
       [<a href="https://github.com/Mael-zys/T2M-GPT/blob/main/T2M-GPT.pdf">PDF</a>]
       [<a href="https://github.com/Mael-zys/T2M-GPT">Code</a>]
       [<a href="https://arxiv.org/abs/2301.06052">arXiv</a>]
-      [<a href="https://colab.research.google.com/drive/1Vy69w2q2d-Hg19F-KibqG0FRdpSj3L4O?usp=sharing">Demo</a>]
+      [<a href="https://colab.research.google.com/drive/1Vy69w2q2d-Hg19F-KibqG0FRdpSj3L4O?usp=sharing">Colab</a>]
+      [<a href="https://huggingface.co/spaces/vumichien/generate_human_motion">Huggingface</a>]
     </td>
   </tr>
 </table>
