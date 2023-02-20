@@ -57,7 +57,7 @@ author_profile: true
     <td style="padding:5px;width:80%;vertical-align:middle;border-right:none;border-bottom:none;">
       <b>Region-level Contrastive and Consistency Learning for Semi-Supervised Semantic Segmentation</b>, 
       <br>
-      <a href="https://jiro-zhang.github.io/Jianrong_Zhang/">Jianrong Zhang*</a>,
+      <a href="https://jiro-zhang.github.io/">Jianrong Zhang*</a>,
       <a href="https://scholar.google.com/citations?user=FHdkcWsAAAAJ&hl=en">Tianyi Wu*</a>, 
       Chuanghao Ding*,
       Hongwei Zhao, 
