@@ -9,14 +9,14 @@ author_profile: true
 <table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.9em;">
   <tr>
     <td style="padding:10px;width:20%;vertical-align:middle;border-right:none;border-bottom:none;">
-      <a href="https://github.com/Jiro-zhang/Jianrong_Zhang/blob/main/images/T2M-GPT.gif">
+      <a href="https://github.com/Jiro-zhang/jiro-zhang.github.io/blob/main/images/T2M-GPT.gif">
       <img src='../images/T2M-GPT.gif' width="200">
       </a>
     </td>
     <td style="padding:5px;width:80%;vertical-align:middle;border-right:none;border-bottom:none;">
       <b>T2M-GPT: Generating Human Motion from Textual Descriptions with Discrete Representations</b>, 
       <br>
-      <a href="https://jiro-zhang.github.io/Jianrong_Zhang/">Jianrong Zhang*</a>, 
+      <a href="https://jiro-zhang.github.io/">Jianrong Zhang*</a>, 
       Yangsong Zhang*, 
       <a href="https://vinthony.github.io/academic/">Xiaodong Cun</a>,
       <a href="https://scholar.google.com/citations?user=o31BPFsAAAAJ&hl=en">Shaoli Huang</a>,
@@ -51,7 +51,7 @@ author_profile: true
 <table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.9em;">
   <tr>
     <td style="padding:10px;width:20%;vertical-align:middle;border-right:none;border-bottom:none;">
-      <a href="https://github.com/Jiro-zhang/Jianrong_Zhang/blob/main/images/region_arch.png">
+      <a href="https://github.com/Jiro-zhang/jiro-zhang.github.io/blob/main/images/region_arch.png">
       <img src='../images/region_arch.png' width="200">
       </a>
     </td>
