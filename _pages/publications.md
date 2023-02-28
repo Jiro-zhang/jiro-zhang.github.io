@@ -26,7 +26,7 @@ author_profile: true
       and
       <a href="https://xishen0220.github.io/">Xi Shen<sup>+</sup></a>.
       <br>
-      <!-- <i>In Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (<b>IJCAI 2022</b>)</i>.  -->
+      <i>In Proceedings of The IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR 2023</b>)</i>.
       <br>
       [<a href="https://mael-zys.github.io/T2M-GPT/">Project page</a>]
       [<a href="https://github.com/Mael-zys/T2M-GPT/blob/main/T2M-GPT.pdf">PDF</a>]
