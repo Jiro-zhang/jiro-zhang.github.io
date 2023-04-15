@@ -12,7 +12,7 @@ redirect_from:
 <b style="font-size: 1.5em;">
     PDF:
     &nbsp;
-    [<a href="/files/Resume_ZhiningLiu.pdf">English</a>]
+    [<a href="/files/">English</a>]
 </b>
 
 ## Education
