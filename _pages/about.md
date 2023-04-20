@@ -40,6 +40,7 @@ Prior to that, I received my B.S. in Computer Science (Tang Ao-qing Honors Progr
 <h1 style="color: rgb(231, 65, 65);"><b>What's new:</b></h1>
 <div style="line-height: 1.5em; font-size: 0.95em">
   <p>
+  <b>[04/2023]</b>  Our paper accepted to IJCAI 2023. <br>
   <b>[03/2023]</b>  I will join <a href="http://reler.net/"> ReLER Lab</a> at UTS this fall as a Ph.D. student, advised by <a href="https://sites.google.com/view/wenguanwang"> Prof. Wenguan Wang</a> and <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN"> Prof. Yi Yang</a> !<br>
   <b>[02/2023]</b>  Our paper <a href="https://arxiv.org/abs/2301.06052"> T2M-GPT: Generating Human Motion from Textual Descriptions with Discrete Representations</a> was available on arXiv (accepted to CVPR 2023). <br>
   <b>[06/2022]</b> I join <a href="https://ai.tencent.com/ailab/en/index">Tencent AI Lab</a> as a research intern, I will work with <a href="https://xishen0220.github.io/">Dr. Xi Shen</a> in computer vision! <br>
