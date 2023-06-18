@@ -36,12 +36,13 @@ Prior to that, I received my B.S. in Computer Science (Tang Ao-qing Honors Progr
 <i class="fa fa-fw fa-envelope"></i> <font style="font-size: 0.9em;">Mail: <a href="mailto:zhangjrjlu@163.com">zhangjrjlu[AT]163.com</a> or <a href="mailto:zhangjrjlu@gmail.com">zhangjrjlu[AT]gmail.com</a></font>
 <br>
 <!-- <i class="fa fa-fw fa-phone"></i> <font style="font-size: 0.9em;">Mobile: +86 176-1010-6607</font> -->
+<!-- <a href="https://sites.google.com/view/wenguanwang"> Prof. Wenguan Wang</a> -->
 
 <h1 style="color: rgb(231, 65, 65);"><b>What's new:</b></h1>
 <div style="line-height: 1.5em; font-size: 0.95em">
   <p>
   <b>[04/2023]</b>  Our paper accepted to IJCAI 2023. <br>
-  <b>[03/2023]</b>  I will join <a href="http://reler.net/"> ReLER Lab</a> at UTS this fall as a Ph.D. student, advised by <a href="https://sites.google.com/view/wenguanwang"> Prof. Wenguan Wang</a> and <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN"> Prof. Yi Yang</a> !<br>
+  <b>[03/2023]</b>  I will join <a href="http://reler.net/"> ReLER Lab</a> at UTS this fall as a Ph.D. student, advised by <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN"> Prof. Yi Yang</a> !<br>
   <b>[02/2023]</b>  Our paper <a href="https://arxiv.org/abs/2301.06052"> T2M-GPT: Generating Human Motion from Textual Descriptions with Discrete Representations</a> was available on arXiv (accepted to CVPR 2023). <br>
   <b>[06/2022]</b> I join <a href="https://ai.tencent.com/ailab/en/index">Tencent AI Lab</a> as a research intern, I will work with <a href="https://xishen0220.github.io/">Dr. Xi Shen</a> in computer vision! <br>
   <b>[04/2022]</b> Our work on semi-supervised semantic segmentation was accepted by IJCAI 2022 (Long oral). <b>[<a href="https://arxiv.org/abs/2204.13314">PDF</a>]</b><br>
