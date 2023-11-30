@@ -16,8 +16,10 @@ redirect_from:
 </b>
 
 ## Education
-
-* M.S. in Computer Science, [Jilin University](http://global.jlu.edu.cn/), 2020 - Present
+* Ph.D in [University of Technology Sydney](https://www.uts.edu.au/), 2023 - Present
+  * @Engineering and Information Technology
+  * Supervisor: Prof. [Yi Yang](https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN)
+* M.S. in Computer Science, [Jilin University](http://global.jlu.edu.cn/), 2020 - 2023
   * @College of Computer Science and Technology
   * Supervisor: Prof. Hongwei Zhao
 * B.E. in Software Engineering, [Jilin University](http://global.jlu.edu.cn/), 2016 - 2020

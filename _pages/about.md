@@ -19,9 +19,11 @@ redirect_from:
 <!-------------------->
 **你好! / Hello! / Bonjour! / 안녕하세요! / こんにちは! / Здравствуй! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
-I'm a third-year M.S. student in [College of Computer Science and technology](http://ccst.jlu.edu.cn/), [Jilin University](http://global.jlu.edu.cn/). 
+I'm a Ph.D. student in [University of Technology Sydney](https://www.uts.edu.au/), supervised by Prof. [Yi Yang](https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN). 
 
-Prior to that, I received my B.E. in College of Software, [Jilin University](http://global.jlu.edu.cn/) in 2020. 
+[College of Computer Science and technology](http://ccst.jlu.edu.cn/), [Jilin University](http://global.jlu.edu.cn/). 
+
+Prior to that, I received my M.S. degree in [College of Computer Science and technology](http://ccst.jlu.edu.cn/), [Jilin University](http://global.jlu.edu.cn/). I received my B.E. in College of Software, [Jilin University](http://global.jlu.edu.cn/) in 2020. 
 During my time at Jilin University, I was fortunate to have internships at Baidu Research (working with [Prof. Guodong Guo](https://scholar.google.com/citations?user=f2Y5nygAAAAJ&hl=zh-CN)), SenseTime, and Tencent AILab (working with [Dr. Xi Shen](https://xishen0220.github.io/)).
 
 
