@@ -33,7 +33,7 @@ Prior to that, I received my B.S. in Computer Science (Tang Ao-qing Honors Progr
 
 
 **Contact me via**:  
-<i class="fa fa-fw fa-envelope"></i> <font style="font-size: 0.9em;">Mail: <a href="mailto:Jianrong.Zhang@student.uts.edu.au">Jianrong.Zhang[AT]student.uts.edu.au</a></font> or <a href="mailto:zhangjrjlu@163.com">zhangjrjlu[AT]163.com</a> or <a href="mailto:zhangjrjlu@gmail.com">zhangjrjlu[AT]gmail.com</a></font>
+<i class="fa fa-fw fa-envelope"></i> <font style="font-size: 0.9em;">Mail: <a href="mailto:Jianrong.Zhang@student.uts.edu.au">Jianrong.Zhang[AT]student.uts.edu.au</a> or <a href="mailto:zhangjrjlu@163.com">zhangjrjlu[AT]163.com</a> or <a href="mailto:zhangjrjlu@gmail.com">zhangjrjlu[AT]gmail.com</a></font>
 <br>
 <!-- <i class="fa fa-fw fa-phone"></i> <font style="font-size: 0.9em;">Mobile: +86 176-1010-6607</font> -->
 <!-- <a href="https://sites.google.com/view/wenguanwang"> Prof. Wenguan Wang</a> -->
