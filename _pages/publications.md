@@ -78,7 +78,7 @@ author_profile: true
   <tr>
     <td style="padding:10px;width:20%;vertical-align:middle;border-right:none;border-bottom:none;">
       <a href="https://github.com/Jiro-zhang/jiro-zhang.github.io/blob/main/images/region_arch.png">
-      <img src='../images/DeS4.pdf' width="200">
+      <img src='../images/DeS4.jpg' width="200">
       </a>
     </td>
     <td style="padding:5px;width:80%;vertical-align:middle;border-right:none;border-bottom:none;">
