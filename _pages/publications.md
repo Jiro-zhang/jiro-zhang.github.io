@@ -25,9 +25,8 @@ author_profile: true
       <br>
       <i>In Proceedings of the AAAI Conference on Artificial Intelligence (<b>AAAI 2024</b>)</i>.
       <br>
-      [<a href="https://github.com/Mael-zys/T2M-GPT/blob/main/T2M-GPT.pdf">PDF</a>]
+      [<a href="https://arxiv.org/abs/2401.15987">arXiv</a>]
       [<a href="https://github.com/Holiday888/HST-Net">Code</a>]
-      [<a href="https://arxiv.org/abs/2301.06052">arXiv</a>]
     </td>
   </tr>
 </table>
@@ -64,15 +63,6 @@ author_profile: true
     </td>
   </tr>
 </table>
-
-<!-- ```bib
-@article{zhang2023generating,
-  title={T2M-GPT: Generating Human Motion from Textual Descriptions with Discrete Representations},
-  author={Zhang, Jianrong and Zhang, Yangsong and Cun, Xiaodong and Huang, Shaoli and Zhang, Yong and Zhao, Hongwei and Lu, Hongtao and Shen, Xi},
-  journal={arXiv preprint arXiv:2301.06052},
-  year={2023},
-}
-``` -->
 
 <table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.9em;">
   <tr>
@@ -125,13 +115,4 @@ author_profile: true
     </td>
   </tr>
 </table>
-<!-- 
-```bib
-@inproceedings{ijcai2022rc2l,
-  title     = {Region-level Contrastive and Consistency Learning for Semi-Supervised Semantic Segmentation},
-  author    = {Zhang, Jianrong and Wu, Tianyi and Ding, Chuanghao and Zhao, Hongwei and Guo, Guodong},
-  booktitle = {Proceedings of the Thirty-First International Joint Conference on
-               Artificial Intelligence, {IJCAI-22}},
-  year      = {2022},
-}
-``` -->
+
