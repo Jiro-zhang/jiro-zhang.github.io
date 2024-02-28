@@ -103,7 +103,7 @@ author_profile: true
       <br>
       <a href="https://jiro-zhang.github.io/">Jianrong Zhang*</a>,
       <a href="https://scholar.google.com/citations?user=FHdkcWsAAAAJ&hl=en">Tianyi Wu*</a>, 
-      Chuanghao Ding*,
+      <a href="https://scholar.google.com/citations?user=1rYvBtEAAAAJ&hl=zh-CN">Chuanghao Ding*</a>,
       Hongwei Zhao, 
       and
       <a href="https://scholar.google.com/citations?user=f2Y5nygAAAAJ&hl=zh-CN">Guodong Guo<sup>+</sup></a>.
