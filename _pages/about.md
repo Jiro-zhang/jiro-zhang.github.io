@@ -24,7 +24,9 @@ During my time at Jilin University, I was fortunate to have internships at Baidu
 <h1 style="color: rgb(231, 65, 65);"><b>What's new:</b></h1>
 <div style="line-height: 1.5em; font-size: 0.95em">
   <p>
-  <b>[12/2023]</b>  One paper is accepted to AAAI 2024. <br>
+  <b>[10/2024]</b>  I awarded Google PhD Fellowship 2024. <br>
+  <b>[10/2024]</b>  One paper accepted to TOMM. <br>
+  <b>[12/2023]</b>  One paper accepted to AAAI 2024. <br>
   <b>[04/2023]</b>  Our paper accepted to IJCAI 2023. <br>
   <b>[03/2023]</b>  I will join <a href="http://reler.net/"> ReLER Lab</a> at UTS this fall as a Ph.D. student, advised by <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN"> Prof. Yi Yang</a> !<br>
   <b>[02/2023]</b>  Our paper <a href="https://arxiv.org/abs/2301.06052"> T2M-GPT: Generating Human Motion from Textual Descriptions with Discrete Representations</a> was available on arXiv (accepted to CVPR 2023). <br>
