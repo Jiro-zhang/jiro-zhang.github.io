@@ -24,7 +24,7 @@ During my time at Jilin University, I was fortunate to have internships at Baidu
 <h1 style="color: rgb(231, 65, 65);"><b>What's new:</b></h1>
 <div style="line-height: 1.5em; font-size: 0.95em">
   <p>
-  <b>[10/2024]</b>  I awarded Google PhD Fellowship 2024. <br>
+  <b>[10/2024]</b>  I was awarded Google PhD Fellowship 2024. <br>
   <b>[10/2024]</b>  One paper accepted to TOMM. <br>
   <b>[12/2023]</b>  One paper accepted to AAAI 2024. <br>
   <b>[04/2023]</b>  Our paper accepted to IJCAI 2023. <br>
