@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Compositional Human Motion Generation with Energy-Based Diffusion Model in Latent Space.">
+  <meta name="keywords" content="Motion Generation, Motion Composition">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>EnergyMoGen</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/title.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -55,12 +55,12 @@
             <span class="author-block">
               <a href="https://hehefan.github.io/">Hehe Fan</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=en">Yi Yang</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=en">Yi Yang</a><sup>2</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>RELER Lab, AAII, University of Technology Sydney,</span>
+            <span class="author-block"><sup>1</sup>ReLER Lab, AAII, University of Technology Sydney,</span>
             <span class="author-block"><sup>2</sup>CCAI, Zhejiang University</span>
           </div>
 
@@ -85,16 +85,6 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/google/nerfies"
@@ -105,15 +95,6 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
 
           </div>
@@ -123,80 +104,10 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+<div class="container" style="text-align:center; padding:1rem">
+  <img src="static/images/Teaser.png" alt="teaser.png" class="text-center" style="width: 100%; max-width: 1100px">
+  <p>(a) Conjunction, (b) Negation, (c) Conjunction + Negation, (d) Multi-concept motion generation</p>
+</div>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -206,232 +117,339 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Diffusion models, particularly latent diffusion models, have demonstrated remarkable success in text-driven human motion generation. 
+            However, it remains challenging for latent diffusion models to effectively compose multiple semantic concepts into a single, coherent motion sequence. 
+            To address this issue, we propose <b>EnergyMoGen</b>, which includes two spectrums of Energy-Based Models: 
+            (1) We interpret the diffusion model as a latent-aware energy-based model that generates motions by composing a set of diffusion models in latent space; 
+            (2) We introduce a semantic-aware energy model based on cross-attention, which enables semantic composition and adaptive gradient descent for text embeddings.
+            To overcome the challenges of semantic inconsistency and motion distortion across these two spectrums, we introduce Synergistic Energy Fusion. 
+            This design allows the motion latent diffusion model to synthesize high-quality, complex motions by combining multiple energy terms corresponding to textual descriptions. 
+            Experiments show that our approach outperforms existing state-of-the-art models on various motion generation tasks, including text-to-motion generation, compositional motion generation, and multi-concept motion generation. 
+            Additionally, we demonstrate that our method can be used to extend motion datasets and improve the text-to-motion task.
           </p>
         </div>
+        <h2 class="title is-3">Overview</h2>
       </div>
     </div>
     <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
-
+<div class="container" style="text-align:center; padding:1rem">
+  <img src="static/images/Framework.png" alt="Framework.png" class="text-center" style="width: 95%; max-width: 1100px">
+</div>
 
 <section class="section">
   <div class="container is-max-desktop">
-
     <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-3">Text-to-Motion</h3>
 
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="content has-text-justified">
+          <p><center>
+            <b>Textual description:</b> a person steps forward and puts their hand up near their face.
+          </center></p>
         </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                FineMoGen
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/text2motion/FineMoGen/finemogen_1.mp4" type="video/mp4">
+              </video>
             </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
           </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                ReMoDiffuse
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/text2motion/ReMoDiffuse/remodiffuse_1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                <strong>Ours</strong>
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/text2motion/EnergyMoGen/ours_1.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
         </div>
-        <br/>
-        <!--/ Interpolating. -->
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+        <hr class="new">
+        
         <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
+          <p><center>
+            <b>Textual description:</b> a person jogs around a small area.
+          </center></p>
         </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                FineMoGen
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/text2motion/FineMoGen/finemogen_2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                ReMoDiffuse
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/text2motion/ReMoDiffuse/remodiffuse_2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                <strong>Ours</strong>
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/text2motion/EnergyMoGen/ours_2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
         </div>
-        <!--/ Re-rendering. -->
+
+        <hr class="new">
+        
+        <div class="content has-text-justified">
+          <p><center>
+            <b>Textual description:</b> person is standing and jumping on one feet.
+          </center></p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                FineMoGen
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/text2motion/FineMoGen/finemogen_3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                ReMoDiffuse
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/text2motion/ReMoDiffuse/remodiffuse_3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                <strong>Ours</strong>
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/text2motion/EnergyMoGen/ours_3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <hr class="new">
+        
+        <h3 class="title is-3">Motion Composition</h3>
+        <h5 class="title is-5">Comparison to state-of-th-arts</h5>
+        <div class="content has-text-justified">
+          <p><center>
+            <b>Textual description:</b> hop to the right <span style="color: red;"><b>AND</b></span> dodge a hit to his head <span style="color: red;"><b>AND</b></span> wave with both hands
+          </center></p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                ReMoDiffuse
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/composition/ReMoDiffuse/remodiffuse.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                MotionDiffuse
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/composition/MotionDiffuse/motiondiffuse.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                <b>Ours (AGD)</b>
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/composition/EnergyMoGen_AGD/multi.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                <b>Ours (SEF)</b>
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/composition/EnergyMoGen_SEF/ours.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="new">
+        
+        <h5 class="title is-5">Conjunction and Negation</h5>
+        <div class="content has-text-justified">
+          <p><center>
+            <b>Textual description:</b> A person walks forward, turns 180 degrees <span style="color: red;"><b>AND</b></span> A man raises his left hand <span style="color: red;"><b>NOT</b></span> A person turns back
+          </center></p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                Concept1
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/composition/EnergyMoGen_SEF/ours_1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                Concept2
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/composition/EnergyMoGen_SEF/ours_2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                Concept3
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/composition/EnergyMoGen_SEF/ours_3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                <strong>Composed motion</strong>
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                <source src="static/videos/composition/EnergyMoGen_SEF/ours_final.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <hr class="new">
+        
+        <h5 class="title is-5">Temporal Composition with Skeleton-based Diffusion</h5>
+        <div class="content has-text-justified">
+          <p><center>
+            <b>Textual description:</b> A person picks up an item <span style="color: red;"><b>+</b></span> A person kicks a ball <span style="color: red;"><b>+</b></span> A person walks <span style="color: red;"><b>+</b></span> A person claps
+          </center></p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                PriorMDM
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="70%">
+                <source src="static/videos/composition/Temporal/pmdm_1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                Ours
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="70%">
+                <source src="static/videos/composition/Temporal/ours_1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <hr class="new">
+
+        <div class="content has-text-justified">
+          <p><center>
+            <b>Textual description:</b> A person rolls forward <span style="color: red;"><b>+</b></span> A person spins around <span style="color: red;"><b>+</b></span> A person throws a ball <span style="color: red;"><b>+</b></span> A person claps
+          </center></p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                PriorMDM
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="70%">
+                <source src="static/videos/composition/Temporal/pmdm_2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                Ours
+              </p>
+              <video id="dollyzoom" autoplay controls muted loop playsinline width="70%">
+                <source src="static/videos/composition/Temporal/ours_2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
   </div>
-</section>
 
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{zhang2024energymogen,
+  author    = {Zhang, Jianrong and Fan, Hehe and Yang, Yi},
+  title     = {EnergyMoGen: Compositional Human Motion Generation with Energy-Based Diffusion Model in Latent Space},
+  journal   = {Arxiv},
+  year      = {2024},
 }</code></pre>
   </div>
 </section>
 
 
 <footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This project page is inspired by <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
           </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
-        </div>
-      </div>
     </div>
-  </div>
 </footer>
 
 </body>
