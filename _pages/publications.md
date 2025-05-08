@@ -9,7 +9,31 @@ author_profile: true
 <table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.9em;">
   <tr>
     <td style="padding:10px;width:20%;vertical-align:middle;border-right:none;border-bottom:none;">
-      <a href="https://github.com/Jiro-zhang/jiro-zhang.github.io/blob/main/images/T2M-GPT.gif">
+      <a href="https://github.com/Jiro-zhang/jiro-zhang.github.io/blob/main/images/EnergyMoGen.gif">
+      <img src='../images/EnergyMoGen.gif' width="200">
+      </a>
+    </td>
+    <td style="padding:5px;width:80%;vertical-align:middle;border-right:none;border-bottom:none;">
+      <b>EnergyMoGen: Compositional Human Motion Generation with Energy-Based Diffusion Model in Latent Space</b>, 
+      <br>
+      <a href="https://jiro-zhang.github.io/">Jianrong Zhang</a>, 
+      <a href="https://hehefan.github.io/">Hehe Fan<sup>+</sup></a>,
+      and
+      <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=en">Yi Yang</a>.
+      <br>
+      <i>In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR 2025 Highlight</b>)</i>.
+      <br>
+      [<a href="https://jiro-zhang.github.io/EnergyMoGen/">Project page</a>]
+      [<a href="https://arxiv.org/abs/2412.14706">arXiv</a>]
+    </td>
+  </tr>
+</table>
+
+
+<table style="width:100%;border:None;border-spacing:0px;border-collapse:separate;margin-right:0;margin-left:0;font-size:0.9em;">
+  <tr>
+    <td style="padding:10px;width:20%;vertical-align:middle;border-right:none;border-bottom:none;">
+      <a href="https://github.com/Jiro-zhang/jiro-zhang.github.io/blob/main/images/HST-Net.gif">
       <img src='../images/HST-Net.gif' width="200">
       </a>
     </td>
