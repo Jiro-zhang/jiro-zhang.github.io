@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Towards Decompositional Human Motion Generation with Energy-Based Diffusion Models">
+  <meta name="keywords" content="Motion Generation, Motion Composition">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DeMoGen</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/title.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  
+  <style>
+    /* 自定义样式来调整视频尺寸 */
+    .video-container video {
+      min-height: 280px;
+      object-fit: contain;
+    }
+
+    .video-column {
+      min-width: 320px;
+    }
+  </style>
+</head>
+<body>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Towards Decompositional Human Motion Generation
+          with Energy-Based Diffusion Models</h1>
+          <!-- <h4 class="title is-4">CVPR 2025 (Highlight)</h4> -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://jiro-zhang.github.io/">Jianrong Zhang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://hehefan.github.io/">Hehe Fan</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=en">Yi Yang</a><sup>2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>ReLER Lab, AAII, University of Technology Sydney,</span>
+            <span class="author-block"><sup>2</sup>CCAI, Zhejiang University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2512.22324"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2512.22324"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Jiro-zhang/DeMoGen/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container" style="text-align:center; padding:1rem">
+  <img src="static/images/Teaser.png" alt="teaser.png" class="text-center" style="width: 100%; max-width: 1100px">
+  <p>(a) Decomposition, (b) Self-Decomposition, (c) Composition</p>
+</div>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Human motions are compositional: complex behaviors can be described as combinations of simpler primitives. 
+            However, existing approaches primarily focus on forward modeling, <i>e.g.</i>, learning holistic mappings 
+            from text to motion or composing a complex motion from a set of motion concepts.
+            In this paper, we consider the inverse perspective: decomposing a holistic motion into semantically 
+            meaningful sub-components. We propose <span style="font-variant: small-caps;">DeMoGen</span>, 
+            a compositional training paradigm for decompositional learning that employs an energy-based diffusion model. 
+            This energy formulation directly captures the composed distribution of multiple motion concepts, 
+            enabling the model to discover them without relying on ground-truth motions for individual concepts.
+            Within this paradigm, we introduce three training variants to encourage a decompositional understanding of motion: 
+            ① <span style="font-variant: small-caps;">DeMoGen-Exp</span> explicitly trains on decomposed text prompts; 
+            ② <span style="font-variant: small-caps;">DeMoGen-OSS</span> performs orthogonal self-supervised decomposition; 
+            ③ <span style="font-variant: small-caps;">DeMoGen-SC</span> enforces semantic consistency between original and decomposed text embeddings.
+            These variants enable our approach to disentangle reusable motion primitives from complex motion sequences. 
+            We also demonstrate that the decomposed motion concepts can be flexibly recombined to generate diverse 
+            and novel motions, generalizing beyond the training distribution. 
+            Additionally, we construct a text-decomposed dataset to support compositional training, serving as an 
+            extended resource to facilitate text-to-motion generation and motion composition.
+          </p>
+        </div>
+        <h2 class="title is-3">Overview</h2>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+<div class="container" style="text-align:center; padding:1rem">
+  <img src="static/images/Framework.png" alt="Framework.png" class="text-center" style="width: 95%; max-width: 1100px">
+</div>
+
+
+<section class="section" id="SupplementaryVisualization">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <!-- <h2 class="title is-3">Supplementary Visualizations</h2> -->
+
+        <!-- Part 1 -->
+        <h2 class="title is-4">Part 1: Text to Motion Generation with Decompositional Understanding</h2>
+
+        <!-- Part 1 - Latent-aware -->
+        <h4 class="title is-5">Latent-aware decomposition</h4>
+
+        <div class="box">
+          <p class="subtitle is-6"><b>Latent-aware DeMoGen-Exp</b></p>
+          <div class="columns is-vcentered is-mobile">
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/latent-aware/exp/inferred1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person dances on the spot while waving the right arm in the air</p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">+</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/latent-aware/exp/inferred2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person dances and poses with legs splayed and arms outstretched</p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">=</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/latent-aware/exp/compose.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person dances on the spot while waving the right arm in the air, then poses with legs splayed and arms outstretched</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p class="subtitle is-6"><b>Latent-aware DeMoGen-OSS</b></p>
+          <div class="columns is-vcentered is-mobile">
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/latent-aware/oss/inferred1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2"><b>the person is walking in a curve to the left hand side</b></p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">+</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/latent-aware/oss/inferred2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2"><b>the person walks to the right in a curve</b></p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">=</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/latent-aware/oss/compose.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">the person is walking in a curve to the left hand side and then back around to the right in a curve</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p class="subtitle is-6"><b>Latent-aware DeMoGen-SC</b></p>
+          <div class="columns is-vcentered is-mobile">
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/latent-aware/sc/inferred1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2"><b>a person appears to be holding some thing with both hands</b></p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">+</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/latent-aware/sc/inferred2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2"><b>a person throws something forward with the left hand</b></p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">=</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/latent-aware/sc/compose.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person appears to be holding some thing with both hands and then throws it forward with their left hand</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="new">
+
+        <!-- Part 1 - Semantic-aware -->
+        <h4 class="title is-5">Semantic-aware decomposition</h4>
+
+        <div class="box">
+          <p class="subtitle is-6"><b>Semantic-aware DeMoGen-Exp</b></p>
+          <div class="columns is-vcentered is-mobile">
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/semantic-aware/exp/inferred1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a man jumps from side to side</p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">+</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/semantic-aware/exp/inferred2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a man keeps his hands to his torso</p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">=</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/semantic-aware/exp/compose.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a man jumps from side to side with his hands to his torso</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p class="subtitle is-6"><b>Semantic-aware DeMoGen-OSS</b></p>
+          <div class="columns is-vcentered is-mobile">
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/semantic-aware/oss/inferred1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2"><b>a person squats down, then gets up</b></p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">+</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/semantic-aware/oss/inferred2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2"><b>a person jumps up slightly, raises both hands above the head</b></p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">=</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/semantic-aware/oss/compose.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person squats down, then gets up, raises both hands above the head</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p class="subtitle is-6"><b>Semantic-aware DeMoGen-SC</b></p>
+          <div class="columns is-vcentered is-mobile">
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/semantic-aware/sc/inferred1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2"><b>a person turns round 180 degrees</b></p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">+</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/semantic-aware/sc/inferred2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2"><b>a person appears to drink something</b></p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">=</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/text2motion/semantic-aware/sc/compose.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person turns round 180 degrees then appears to drink something</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="new">
+
+        <!-- Part 2 -->
+        <h2 class="title is-4">Part 2: Decompositional Motion Generation</h2>
+
+        <h4 class="title is-5">Part 2.1: Flexible Motion Decomposition with DeMoGen-Exp</h4>
+
+        <div class="box">
+          <p class="subtitle is-6"><b>Example A</b> — a person walks forward, bends down, picks something up, then walks backward</p>
+          <div class="columns is-vcentered is-mobile">
+            <div class="column video-column">
+              <p class="has-text-centered is-size-7 mb-2"><b>Input motion</b></p>
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/flexible/visual1/ours.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">=</div>
+            <div class="column video-column">
+              <p class="has-text-centered is-size-7 mb-2"><b>Decomposed concept 1</b></p>
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/flexible/visual1/decompose1_1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person walks forward</p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">+</div>
+            <div class="column video-column">
+              <p class="has-text-centered is-size-7 mb-2"><b>Decomposed concept 2</b></p>
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/flexible/visual1/decompose1_2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person bends down, picks something up, then walks backward</p>
+            </div>
+          </div>
+
+          <div class="columns is-vcentered is-mobile mt-4">
+            <div class="column is-hidden-mobile"></div>
+            <div class="column is-narrow has-text-centered is-size-3">=</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/flexible/visual1/decompose2_1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person walks forward, bends down, pick something up</p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">+</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/flexible/visual1/decompose2_2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person walks backward</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p class="subtitle is-6"><b>Example B</b> — a person walks in a circle, lifts both hands overhead</p>
+          <div class="columns is-vcentered is-mobile">
+            <div class="column video-column">
+              <p class="has-text-centered is-size-7 mb-2"><b>Input motion</b></p>
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/flexible/visual2/ours.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">=</div>
+            <div class="column video-column">
+              <p class="has-text-centered is-size-7 mb-2"><b>Decomposed concept 1</b></p>
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/flexible/visual2/decompose1_1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person walks in a circle</p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">+</div>
+            <div class="column video-column">
+              <p class="has-text-centered is-size-7 mb-2"><b>Decomposed concept 2</b></p>
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/flexible/visual2/decompose1_2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person lifts both hands overhead</p>
+            </div>
+          </div>
+
+          <div class="columns is-vcentered is-mobile mt-4">
+            <div class="column is-hidden-mobile"></div>
+            <div class="column is-narrow has-text-centered is-size-3">=</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/flexible/visual2/decompose2_1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person walks in a circle and lifts the left hand overhead</p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">+</div>
+            <div class="column video-column">
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/flexible/visual2/decompose2_2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person lifts the right hand overhead</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="new">
+
+        <h4 class="title is-5">Part 2.2: Unguided Motion Decomposition with DeMoGen-OSS and DeMoGen-SC</h4>
+
+        <div class="box">
+          <p class="subtitle is-6"><b>DeMoGen-OSS</b></p>
+          <div class="columns is-vcentered is-mobile">
+            <div class="column video-column">
+              <p class="has-text-centered is-size-7 mb-2"><b>Input motion</b></p>
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/decompose/oss/ours.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person takes deliberate steps, some much larger steps and some much smaller steps, to cross stepping stones</p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">=</div>
+            <div class="column video-column">
+              <p class="has-text-centered is-size-7 mb-2"><b>Decomposed concept 1</b></p>
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/decompose/oss/decompose1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2"><b>a person takes some smaller steps on stepping stones</b></p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">+</div>
+            <div class="column video-column">
+              <p class="has-text-centered is-size-7 mb-2"><b>Decomposed concept 2</b></p>
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/decompose/oss/decompose2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2"><b>a person takes some larger steps to cross stepping stones</b></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p class="subtitle is-6"><b>DeMoGen-SC</b></p>
+          <div class="columns is-vcentered is-mobile">
+            <div class="column video-column">
+              <p class="has-text-centered is-size-7 mb-2"><b>Input motion</b></p>
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/decompose/sc/ours.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2">a person is walking stumbled toward the left hand side along the way</p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">=</div>
+            <div class="column video-column">
+              <p class="has-text-centered is-size-7 mb-2"><b>Decomposed concept 1</b></p>
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/decompose/sc/decompose1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2"><b>a person walking stumbled</b></p>
+            </div>
+            <div class="column is-narrow has-text-centered is-size-3">+</div>
+            <div class="column video-column">
+              <p class="has-text-centered is-size-7 mb-2"><b>Decomposed concept 2</b></p>
+              <div class="video-container">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/decomposition/decompose/sc/decompose2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="is-size-7 has-text-centered is-italic mt-2"><b>a person walks toward the left hand side</b></p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="new">
+
+        <!-- Part 3 -->
+        <h3 class="title is-4">Part 3: Generating Diverse Motions Using DeMoGen-OSS and DeMoGen-SC</h3>
+
+        <div class="columns is-multiline">
+          <div class="column is-12">
+            <div class="box">
+              <p class="subtitle is-6"><b>Text:</b> a person is touching something with his left arm</p>
+              <div class="columns is-vcentered is-mobile">
+                <div class="column video-column">
+                  <p class="has-text-centered is-size-7 mb-2"><b>Infered Concept 1</b></p>
+                  <div class="video-container">
+                    <video autoplay controls muted loop playsinline width="100%">
+                      <source src="static/videos/decomposition/diversity/diverse1_1.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="column video-column">
+                  <p class="has-text-centered is-size-7 mb-2"><b>Infered Concept 2</b></p>
+                  <div class="video-container">
+                    <video autoplay controls muted loop playsinline width="100%">
+                      <source src="static/videos/decomposition/diversity/diverse1_2.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="column video-column">
+                  <p class="has-text-centered is-size-7 mb-2"><b>Composed motion</b></p>
+                  <div class="video-container">
+                    <video autoplay controls muted loop playsinline width="100%">
+                      <source src="static/videos/decomposition/diversity/compose1.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-12">
+            <div class="box">
+              <p class="subtitle is-6"><b>Text:</b> a person jumps forward</p>
+              <div class="columns is-vcentered is-mobile">
+                <div class="column video-column">
+                  <p class="has-text-centered is-size-7 mb-2"><b>Infered Concept 1</b></p>
+                  <div class="video-container">
+                    <video autoplay controls muted loop playsinline width="100%">
+                      <source src="static/videos/decomposition/diversity/diverse2_1.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="column video-column">
+                  <p class="has-text-centered is-size-7 mb-2"><b>Infered Concept 2</b></p>
+                  <div class="video-container">
+                    <video autoplay controls muted loop playsinline width="100%">
+                      <source src="static/videos/decomposition/diversity/diverse2_2.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="column video-column">
+                  <p class="has-text-centered is-size-7 mb-2"><b>Composed motion</b></p>
+                  <div class="video-container">
+                    <video autoplay controls muted loop playsinline width="100%">
+                      <source src="static/videos/decomposition/diversity/compose2.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-12">
+            <div class="box">
+              <p class="subtitle is-6"><b>Text:</b> a person begins to run in a straight line</p>
+              <div class="columns is-vcentered is-mobile">
+                <div class="column video-column">
+                  <p class="has-text-centered is-size-7 mb-2"><b>Infered Concept 1</b></p>
+                  <div class="video-container">
+                    <video autoplay controls muted loop playsinline width="100%">
+                      <source src="static/videos/decomposition/diversity/diverse3_1.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="column video-column">
+                  <p class="has-text-centered is-size-7 mb-2"><b>Infered Concept 2</b></p>
+                  <div class="video-container">
+                    <video autoplay controls muted loop playsinline width="100%">
+                      <source src="static/videos/decomposition/diversity/diverse3_2.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="column video-column">
+                  <p class="has-text-centered is-size-7 mb-2"><b>Composed motion</b></p>
+                  <div class="video-container">
+                    <video autoplay controls muted loop playsinline width="100%">
+                      <source src="static/videos/decomposition/diversity/compose3.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-12">
+            <div class="box">
+              <p class="subtitle is-6"><b>Text:</b> a person tries to kick something</p>
+              <div class="columns is-vcentered is-mobile">
+                <div class="column video-column">
+                  <p class="has-text-centered is-size-7 mb-2"><b>Infered Concept 1</b></p>
+                  <div class="video-container">
+                    <video autoplay controls muted loop playsinline width="100%">
+                      <source src="static/videos/decomposition/diversity/diverse4_1.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="column video-column">
+                  <p class="has-text-centered is-size-7 mb-2"><b>Infered Concept 2</b></p>
+                  <div class="video-container">
+                    <video autoplay controls muted loop playsinline width="100%">
+                      <source src="static/videos/decomposition/diversity/diverse4_2.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="column video-column">
+                  <p class="has-text-centered is-size-7 mb-2"><b>Composed motion</b></p>
+                  <div class="video-container">
+                    <video autoplay controls muted loop playsinline width="100%">
+                      <source src="static/videos/decomposition/diversity/compose4.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{zhang2025demogen,
+  title={DeMoGen: Towards Decompositional Human Motion Generation with Energy-Based Diffusion Models},
+  author={Zhang, Jianrong and Fan, Hehe and Yang, Yi},
+  journal={arXiv preprint arXiv:2512.22324},
+  year={2025}
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+    <div class="columns is-centered">
+          <p>
+            This project page is inspired by <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+    </div>
+</footer>
+
+</body>
+</html>
