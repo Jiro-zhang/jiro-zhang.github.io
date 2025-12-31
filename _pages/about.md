@@ -11,7 +11,7 @@ redirect_from:
 
 **你好! / Hello! / Bonjour! / 안녕하세요! / こんにちは! / Здравствуй! / Guten Tag! / Hola! / Ciao! / السلام عليكم!**
 
-I'm a first year Ph.D. student in [University of Technology Sydney](https://www.uts.edu.au/), supervised by Prof. [Yi Yang](https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN). 
+I'm a second year Ph.D. student in [University of Technology Sydney](https://www.uts.edu.au/), supervised by Prof. [Yi Yang](https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN). 
 
 Prior to that, I received my M.S. degree in [College of Computer Science and technology](http://ccst.jlu.edu.cn/), [Jilin University](http://global.jlu.edu.cn/). I received my B.E. in College of Software, [Jilin University](http://global.jlu.edu.cn/) in 2020. 
 During my time at Jilin University, I was fortunate to have internships at Baidu Research (working with [Prof. Guodong Guo](https://scholar.google.com/citations?user=f2Y5nygAAAAJ&hl=zh-CN)), SenseTime, and Tencent AILab (working with [Dr. Xi Shen](https://xishen0220.github.io/)).
@@ -24,6 +24,7 @@ During my time at Jilin University, I was fortunate to have internships at Baidu
 <h1 style="color: rgb(231, 65, 65);"><b>What's new:</b></h1>
 <div style="line-height: 1.5em; font-size: 0.95em">
   <p>
+  <b>[02/2025]</b>  One paper accepted to CVPR 2025 (Highlight). <br>
   <b>[10/2024]</b>  I was awarded Google PhD Fellowship 2024. <br>
   <b>[10/2024]</b>  One paper accepted to TOMM. <br>
   <b>[12/2023]</b>  One paper accepted to AAAI 2024. <br>
