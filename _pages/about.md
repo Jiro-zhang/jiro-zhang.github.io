@@ -22,9 +22,29 @@ During my time at Jilin University, I was fortunate to have internships at Baidu
 <br>
 
 <h1 style="color: rgb(231, 65, 65);"><b>What's new:</b></h1>
-<div style="line-height: 1.5em; font-size: 0.95em">
+<style>
+.news-scroll {
+  line-height: 1.7em;
+  font-size: 0.95em;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 4px 8px 4px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #c9c9c9 transparent;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 14px, #000 calc(100% - 18px), transparent 100%);
+          mask-image: linear-gradient(to bottom, transparent 0, #000 14px, #000 calc(100% - 18px), transparent 100%);
+}
+.news-scroll p { margin: 0; }
+.news-scroll::-webkit-scrollbar { width: 6px; }
+.news-scroll::-webkit-scrollbar-track { background: transparent; }
+.news-scroll::-webkit-scrollbar-thumb { background: #d0d0d0; border-radius: 3px; }
+.news-scroll::-webkit-scrollbar-thumb:hover { background: #b0b0b0; }
+</style>
+<div class="news-scroll">
   <p>
-  <b>[02/2025]</b>  One paper accepted to CVPR 2026. <br>
+  <b>[06/2026]</b>  One paper accepted to ECCV 2026, and one paper accepted to Pattern Recognition. <br>
+  <b>[02/2026]</b>  One paper accepted to CVPR 2026. <br>
   <b>[02/2025]</b>  One paper accepted to CVPR 2025 (Highlight). <br>
   <b>[10/2024]</b>  I was awarded Google PhD Fellowship 2024. <br>
   <b>[10/2024]</b>  One paper accepted to TOMM. <br>
